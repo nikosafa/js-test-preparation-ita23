@@ -23,7 +23,7 @@ const weeklySalesDataExample = [
 
 
 /**
- * This function generates a sales report for a given week.
+ * This function generates a sales report
  *
  * @param {array} salesData - An array of objects, each representing a day's sales.
  * Each object contains a date, and an array of items sold with their quantities and prices.
