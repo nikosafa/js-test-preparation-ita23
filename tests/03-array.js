@@ -1,6 +1,6 @@
 function testArray() {
     describe('03-array - getLastElement', () => {
-        it('should return even numbers from 2 to 20', function() {
+        it('Should return the last number in the array', function() {
             const lastElement = getLastElement([2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
             expect(lastElement).toEqual(20);
 
