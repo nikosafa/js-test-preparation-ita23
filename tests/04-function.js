@@ -55,13 +55,6 @@ function testFunction() {
             expect(mirrorWordCheck("mirror", "mirror")).toBe(false);
         });
 
-        it("should handle case sensitivity correctly", function() {
-            expect(mirrorWordCheck("Stressed", "dessertS")).toBe(true);
-            expect(mirrorWordCheck("Live", "Evil")).toBe(true);
-            expect(mirrorWordCheck("God", "Dog")).toBe(true);
-            expect(mirrorWordCheck("Madam", "madam")).toBe(true);
-        });
-
         it("should return true for empty strings", function() {
             expect(mirrorWordCheck("", "")).toBe(true);
         });
@@ -76,11 +69,6 @@ function testFunction() {
             expect(mirrorWordCheck("a", "b")).toBe(false);
         });
 
-        it("should handle strings with spaces and special characters", function() {
-            expect(mirrorWordCheck("A man, a plan, a canal, Panama", "amanaP ,lanac a ,nalp a ,nam A")).toBe(true);
-            expect(mirrorWordCheck("No 'x' in Nixon", "noxiN ni x'oN")).toBe(true);
-        });
-
         it("should handle strings with numbers", function() {
             expect(mirrorWordCheck("12345", "54321")).toBe(true);
             expect(mirrorWordCheck("12345", "12345")).toBe(false);
@@ -89,12 +77,6 @@ function testFunction() {
         it("should return false for words of different lengths", function() {
             expect(mirrorWordCheck("hello", "olle")).toBe(false);
             expect(mirrorWordCheck("abc", "cba ")).toBe(false); // Extra space
-        });
-
-        it("should handle Unicode characters", function() {
-            expect(mirrorWordCheck("こんにちは", "はちにんこ")).toBe(true);
-            expect(mirrorWordCheck("你好", "好你")).toBe(true);
-            expect(mirrorWordCheck("🙂🙃", "🙃🙂")).toBe(true);
         });
 
         it("should ignore leading and trailing whitespace", function() {

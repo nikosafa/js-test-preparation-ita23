@@ -1,46 +1,4 @@
 function testAllLearningGoals() {
-    describe("mostFrequentChar", function() {
-        it("should return the most frequent character in a string", function() {
-            expect(mostFrequentChar("programming")).toBe("g");
-            expect(mostFrequentChar("hello")).toBe("l");
-            expect(mostFrequentChar("mississippi")).toBe("i");
-        });
-
-        it("should handle strings with multiple characters having the same maximum frequency", function() {
-            const result = mostFrequentChar("aabbcc");
-            expect(["a", "b", "c"]).toContain(result);
-        });
-
-        it("should handle strings with all unique characters", function() {
-            expect(mostFrequentChar("abc")).toBe("a"); // First character in the string
-        });
-
-        it("should be case-sensitive", function() {
-            expect(mostFrequentChar("AaBbCc")).toBe("A");
-        });
-
-        it("should handle strings with spaces and special characters", function() {
-            expect(mostFrequentChar("hello world!")).toBe("l");
-        });
-
-        it("should handle strings with numbers", function() {
-            expect(mostFrequentChar("112233")).toBe("1");
-        });
-
-        it("should handle strings with non-ASCII characters", function() {
-            expect(mostFrequentChar("こんにちは")).toBe("こ");
-        });
-
-        it("should return the first most frequent character in case of a tie", function() {
-            expect(mostFrequentChar("abab")).toBe("a"); // 'a' and 'b' both occur twice
-        });
-
-        it("should handle long strings efficiently", function() {
-            const longStr = "a".repeat(1000) + "b".repeat(999);
-            expect(mostFrequentChar(longStr)).toBe("a");
-        });
-    });
-
     describe("trackStudentGrades", function() {
         it("should correctly identify passing and failing students based on grades and attendance", function() {
             const students = [

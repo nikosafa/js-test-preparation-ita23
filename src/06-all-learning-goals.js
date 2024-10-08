@@ -1,18 +1,4 @@
 /**
- * This function finds the most frequent character in a string.
- *
- * @param {string} str - The input string.
- * @returns {string} - The most frequent character in the string.
- *
- * Usage:
- * const frequentChar = mostFrequentChar("programming"); // frequentChar will be "g"
- * const anotherChar = mostFrequentChar("hello"); // anotherChar will be "l"
- */
-function mostFrequentChar(str) {
-
-}
-
-/**
  * This function determines which students pass based on grades and attendance.
  *
  * @param {array} students - An array of student objects with `name`, `grades`, and `attendance`.
