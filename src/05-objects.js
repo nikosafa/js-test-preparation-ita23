@@ -37,9 +37,28 @@ function findBookByAuthor(books, author) {
  *
  * Usage:
  * const oldBooks = getOlderBooks([{title: "A", year: 1990}, {title: "B", year: 2022}], 2000);
- * console.log(oldBooks); // Outputs {title: "A", year: 1990}
+ * console.log(oldBooks); // Outputs [{title: "A", year: 1990}]
  */
 function getOlderBooks(books, year) {
+
+}
+
+/**
+ * This function calculates the average rating for all movies combined.
+ *
+ * @param {array} movies - An array of movie objects, each with `title` and `ratings`.
+ * @returns {number} - The average rating of all movies.
+ *
+ * Usage:
+ * const movies = [
+ *   { title: "Movie A", ratings: [5, 4, 4] },
+ *   { title: "Movie B", ratings: [3, 4, 5, 3] },
+ *   { title: "Movie C", ratings: [5, 5, 5] }
+ * ];
+ * const averageRating = calculateAverageRating(movies);
+ * console.log(averageRating); // Outputs the combined average, e.g., 4.22
+ */
+function calculateAverageRating(movies) {
 
 }
 

@@ -32,16 +32,31 @@ function isMultipleOf(n, m) {
 
 
 /**
- * This function reverses a string.
+ * This function counts the number of uppercase letters in a string.
  *
- * @param {string} str - The string to be reversed.
- * @returns {string} - The reversed string.
+ * @param {string} str - The input string.
+ * @returns {number} - The count of uppercase letters.
  *
  * Usage:
- * const reversed = reverseString('hello'); // reversed will be 'olleh'
- * const anotherReversed = reverseString('world'); // anotherReversed will be 'dlrow'
+ * const capitalCount = countCapitals("Hello World"); // capitalCount will be 2
+ * const anotherCapitalCount = countCapitals("JavaScript"); // anotherCapitalCount will be 2
  */
+function countCapitals(str) {
 
-function reverseString(str) {
+}
+
+
+/**
+ * This function takes two words, combines them, and counts the number of vowels.
+ *
+ * @param {string} word1 - The first word.
+ * @param {string} word2 - The second word.
+ * @returns {number} - The total number of vowels in both words combined.
+ *
+ * Usage:
+ * const vowelCount = countVowelsInWords("hello", "world"); // vowelCount will be 3
+ * const anotherCount = countVowelsInWords("apple", "banana"); // anotherCount will be 5
+ */
+function countVowelsInWords(word1, word2) {
 
 }

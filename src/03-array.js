@@ -56,3 +56,18 @@ function squareArray(array) {
 function findMax(array) {
 
 }
+
+
+/**
+ * This function calculates the sum of elements at odd indices in an array.
+ *
+ * @param {number[]} arr - The input array of numbers.
+ * @returns {number} - The sum of the elements at odd indices.
+ *
+ * Usage:
+ * const sumOdd = sumOddIndices([10, 20, 30, 40, 50]); // sumOdd will be 60 (20 at index 1 + 40 at index 3)
+ * const anotherSumOdd = sumOddIndices([1, 3, 5, 7]); // anotherSumOdd will be 10 (3 + 7)
+ */
+function sumOddIndices(arr) {
+
+}

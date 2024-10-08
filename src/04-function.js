@@ -32,3 +32,20 @@
  */
 
 
+/**
+ * This function checks if two words are mirror words.
+ *
+ * @param {string} word1 - The first word.
+ * @param {string} word2 - The second word.
+ * @returns {boolean} - True if word1 is a mirror of word2, false otherwise.
+ *
+ * Usage:
+ * const isMirror = mirrorWordCheck("stressed", "desserts"); // isMirror will be true
+ * const notMirror = mirrorWordCheck("hello", "world"); // notMirror will be false
+ */
+function mirrorWordCheck(word1, word2) {
+
+}
+
+
+
