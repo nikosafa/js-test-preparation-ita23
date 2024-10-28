@@ -10,9 +10,15 @@
  */
 
 function getNextEven(n) {
-
+    for (let i = n + 1; ; i++) {
+        if (i % 2 === 0) {
+            return i;
+        }
+    }
 }
 
+console.log(getNextEven(3));
+console.log(getNextEven(8));
 
 /**
  * This function checks if a number is a multiple of another number.
