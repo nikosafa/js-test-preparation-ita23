@@ -71,6 +71,9 @@ function squareArray(array) {
  * const max = findMax([1, 2, 3]); // max will be 3
  * const anotherMax = findMax([-1, -2, 3]); // anotherMax will be 3
  */
+/*
+https://builtin.com/articles/javascript-array-max
+ */
 function findMax(array) {
 
     let max = array[0];
