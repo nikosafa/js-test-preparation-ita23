@@ -48,9 +48,26 @@ function isMultipleOf(n, m) {
  * const anotherCapitalCount = countCapitals("JavaScript"); // anotherCapitalCount will be 2
  */
 function countCapitals(str) {
+    let count = 0;
 
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            count++;
+        }
+    }
+
+    return count;
 }
 
+
+console.log(countCapitals("Hello World"));
+console.log(countCapitals("JavaScript"));
+console.log(countCapitals(""));
+console.log(countCapitals("test"));
+console.log(countCapitals("ALLUPPERCASE"));
+console.log(countCapitals("1234!@#$%^&*()"));
+console.log(countCapitals("Mix3d C@seS!"));
+console.log(countCapitals("Hello123!"));
 
 /**
  * This function takes two words, combines them, and counts the number of vowels.
