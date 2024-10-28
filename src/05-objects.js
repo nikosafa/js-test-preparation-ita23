@@ -8,8 +8,18 @@
  * console.log(myBook.title); // Outputs the title of the book
  */
 function createBook() {
-
+    return {
+        title: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        year: 1925
+    };
 }
+
+const myBook = createBook();
+console.log(myBook.title);
+console.log(myBook.author);
+console.log(myBook.year);
+
 
 
 /**
@@ -24,8 +34,18 @@ function createBook() {
  * console.log(result); // Outputs {title: "Sample", author: "John Doe", year: 2020}
  */
 function findBookByAuthor(books, author) {
-
+    const foundBook = books.find(book => book.author === author);
+    return foundBook;
 }
+
+const booksArray = [
+    { title: "Sample", author: "John Doe", year: 2020 },
+    { title: "Here I am", author: "Peter Hansen", year: 1987 }
+];
+
+const result2 = findBookByAuthor(booksArray, "John Doe");
+console.log(result2);
+
 
 
 /**
