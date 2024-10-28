@@ -8,9 +8,15 @@
  * const lastElement = getLastElement([2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
  * console.log(lastElement); // 20
  */
-function getLastElement(array) {
 
+
+function getLastElement(array) {
+    return array[array.length - 1];
 }
+
+const lastElement = getLastElement([2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
+console.log(lastElement); // 20
+
 
 
 /**
@@ -24,9 +30,20 @@ function getLastElement(array) {
  * const numbers = returnEvenNumbers(2, 20);
  * // numbers will be [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
  */
+/*
+https://www.geeksforgeeks.org/javascript-program-to-print-even-numbers-in-an-array/
+ */
 function returnEvenNumbers(start, finish) {
-
+    let evenNumbers = [];
+    for (let i = start; i <= finish; i++) {
+        if (i % 2 === 0) {
+            evenNumbers.push(i);
+        }
+    }
+    return evenNumbers;
 }
+const numbers = returnEvenNumbers(2, 20);
+console.log(`Even numbers from 2 to 20 are: ${numbers}`);
 
 
 /**
@@ -40,6 +57,7 @@ function returnEvenNumbers(start, finish) {
  * const anotherSquares = squareArray([-1, -2, 3]); // anotherSquares will be [1, 4, 9]
  */
 function squareArray(array) {
+
 
 }
 
@@ -55,7 +73,17 @@ function squareArray(array) {
  */
 function findMax(array) {
 
+    let max = array[0];
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+        }
+    }
+    return max
 }
+let numbers3 = findMax([3, 7, 2, 8, 5]);
+console.log(numbers3);
 
 
 /**
