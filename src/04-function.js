@@ -8,6 +8,12 @@
  * const greetJack = greetUser("Jack"); // greetJack will be "Hello, Jack"
  */
 
+function greetUser(name) {
+    return "Hello, " + name;
+}
+
+const greetJack = greetUser("Jack");
+console.log(greetJack);
 
 
 /**
@@ -20,6 +26,11 @@
  * const spinal = toSpinalCase("This Is Spinal Tap"); // spinal will be "this-is-spinal-tap"
  */
 
+function spinalCase (str) {
+    return result
+}
+const res = toSpinalCase("This Is Spinal Tap")
+console.log(toSpinalCase)
 
 /**
  * This function calculates the time taken by light to travel a certain distance.
@@ -28,8 +39,22 @@
  * @returns {number} - Time taken in seconds.
  *
  * Usage:
- * const time = lightTravelTime(300000); // time will be 1
+ * const time = lightTravelTime(600000); // time will be 2
  */
+function lightTravelTime(distance) {
+    const speedOfLight = 300000;
+
+    // Returnere 0 for distancen af 0 km
+    if (distance === 0) {
+        return 0;
+    }
+    return distance / speedOfLight;
+}
+
+console.log(lightTravelTime(0));
+console.log(lightTravelTime(600000));
+console.log(lightTravelTime(300000));
+
 
 
 /**
