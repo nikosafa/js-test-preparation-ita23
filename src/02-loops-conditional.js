@@ -20,6 +20,8 @@ function getNextEven(n) {
 console.log(getNextEven(3));
 console.log(getNextEven(8));
 
+
+
 /**
  * This function checks if a number is a multiple of another number.
  *
